@@ -219,7 +219,7 @@
 			<!-- About Section Button-->
 			<div class="text-center mt-4">
 				<a class="btn btn-xl btn-outline-light"
-					href="https://github.com/FarooqBaig/Job-Noifier"> <i
+					href="https://github.com/FarooqBaig/Job-Notifier"> <i
 					class="fas fa-download me-2"></i> Free Download!
 				</a>
 			</div>
@@ -619,10 +619,6 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-	<!-- * *                               SB Forms JS                               * *-->
-	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

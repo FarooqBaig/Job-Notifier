@@ -11,7 +11,7 @@ import org.jsoup.select.Elements;
 
 public class Scrape {
 
-	public int  AllJobs(int ele,int count,ArrayList<Posts> allJobs)
+	public int  AllJobs(int ele,int count,ArrayList<Posts> allJobs, boolean preferred , String rname)
 	{
 
 		  try {
@@ -53,7 +53,10 @@ public class Scrape {
           	    System.out.println("Href : " + hyperLink );   
           	    System.out.println("");
               */
-          	    allJobs.add(new Posts(count,JobTitle,ImgSrc1,ImgSrc2,hyperLink));
+          	    if(JobTitle.equals(rname) && preferred == true)
+          	    allJobs.add(new Posts(count,JobTitle,ImgSrc1,ImgSrc2,hyperLink)); 
+          	    else
+          	    allJobs.add(new Posts(count,JobTitle,ImgSrc1,ImgSrc2,hyperLink)); 
           	   count++;
           	} 
                                             	          	     	      

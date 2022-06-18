@@ -76,8 +76,45 @@
 		</div>
 	</header>
 	
+
+
+
+			
+<!--  This is the table of results    -->
 	
 	<table class="table table-striped">
+		<tr><h2 class="masthead-heading text-uppercase mb-0">You may like below jobs</h2>
+	</tr>
+	<thead>
+	<tr>
+	<th><b>S.No.</b></th>
+	<th><b>Job Title</b></th>
+	<th><b>Company Logo 1</b></th>
+
+	<th><b>Visit</b></th>
+	</tr>
+	</thead>
+	<%ArrayList<Posts> allJobs2 = 
+	    (ArrayList<Posts>)request.getAttribute("data2");
+	for(Posts p : allJobs2){%>
+	<tr>
+	  <td><%=p.getSNO()%></td>
+	    <td><%=p.getJobTitle()%></td>
+	      <td><img src=<%=p.getimg1()%> alt="logo" width="50" height="60"></td>
+<td><a href=<%=p.getlink()%>  >Visit</a></td>
+	</tr>
+	<%}%>
+	
+	
+
+			
+
+
+	</table>
+	
+	<table class="table table-striped">
+	<tr><h2 class="masthead-heading text-uppercase mb-0">Please checkout below jobs also</h2>
+	</tr>
 	<thead>
 	<tr>
 	<th><b>S.No.</b></th>
@@ -97,9 +134,11 @@
 <td><a href=<%=p.getlink()%>  >Visit</a></td>
 	</tr>
 	<%}%>
-	
-	
 	</table>
+	
+	
+
+	
 	
 	<!-- About Section-->
 	<section class="page-section bg-primary text-white mb-0" id="about">
@@ -131,7 +170,7 @@
 			<!-- About Section Button-->
 			<div class="text-center mt-4">
 				<a class="btn btn-xl btn-outline-light"
-					href="https://github.com/FarooqBaig/Job-Noifier"> <i
+					href="https://github.com/FarooqBaig/Job-Notifier"> <i
 					class="fas fa-download me-2"></i> Free Download!
 				</a>
 			</div>
@@ -531,10 +570,6 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-	<!-- * *                               SB Forms JS                               * *-->
-	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

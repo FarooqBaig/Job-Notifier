@@ -24,7 +24,7 @@
 				<div class="signup-content">
 					<div class="signup-form">
 						<h2 class="form-title">Preferences</h2>
-					
+						
 						<form method="post" action="list" class="register-form"
 							id="register-form">
 							
@@ -48,6 +48,8 @@
 									class="zmdi zmdi-walk material-icons-name"></i></label> <input
 									type="text" name="fname" id="fname" placeholder="Full Time or Part Time" />
 							</div>
+							<h5 class="form-title">After setting preferences it may take a while to prepare list</h5>
+					
 							<div class="form-group form-button">
 								<input type="submit" name="prefernces" id="preferences"
 									class="form-submit" value="SET" />
